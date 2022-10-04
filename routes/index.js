@@ -1,3 +1,16 @@
+const messages = [
+  {
+    text: "Hi there!",
+    user: "Amando",
+    added: new Date()
+  },
+  {
+    text: "Hello World!",
+    user: "Charles",
+    added: new Date()
+  }
+]
+
 var express = require('express');
 var router = express.Router();
 
@@ -7,3 +20,8 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+// GET 'new' route//
+router.get('/new',funciton(req,res,next){
+
+})
