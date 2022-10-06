@@ -29,7 +29,7 @@ router.get('/new',function(req,res,next){
 
 //POST re: 'new' route//
 
-router.post('', function(req,res,next){
+router.post('/new', function(req,res,next){
   const newMessage = req.body.newMessage
   const newAuthor = req.body.newAuthor
   messages = [...messages,{
